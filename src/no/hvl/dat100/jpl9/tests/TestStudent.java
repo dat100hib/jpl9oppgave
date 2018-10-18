@@ -15,7 +15,7 @@ public class TestStudent {
 		assertEquals(student.getFornamn(),"Ole");
 		assertEquals(student.getFodselsnummer(),7);
 		assertEquals(student.getStudentnummer(),100);
-		assertEquals(student.getFodselsnummer(),7);
+		assertEquals(student.getKlasse(),"1A");
 	}
 
 	@Test

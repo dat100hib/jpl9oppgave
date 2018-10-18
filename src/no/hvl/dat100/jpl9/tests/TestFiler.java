@@ -22,6 +22,7 @@ public class TestFiler {
 		samling.leggTil(laerer);
 		
 		filer.skriv(samling, FILNAVN);
+		//TODO: test ved å sammenligne med personertest.dat
 	}
 
 	@Test

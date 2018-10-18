@@ -24,6 +24,12 @@ public class TestSamling {
 		assertEquals(samling.getSamling().length,40);
 	}
 	
+	// TODO: 
+	// finnes
+	// ledig plass
+	// enkel leggTil
+	// utvid
+	// så avansert legg til
 	
 	@Test 
 	public void testleggTil() {
