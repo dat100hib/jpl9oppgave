@@ -2,59 +2,62 @@ package no.hvl.dat100.jpl9;
 
 public abstract class Person {
 
-	private String etternamn;
-	private String fornamn;
-	private long fodselsnummer;
-	
 	public Person() {
 	}
 
 	public Person(String etternamn, String fornamn, long fodselsnummer) {
-		this.fodselsnummer = fodselsnummer;
-		this.etternamn = etternamn;
-		this.fornamn = fornamn;
+		// TODO
+		throw new RuntimeException("Person constructor not implemented");
 	}
 
 	public String getEtternamn() {
-		return etternamn;
+		// TODO
+		throw new RuntimeException("getEtternamn not implemented");
 	}
 
 	public void setEtternamn(String etternamn) {
-		this.etternamn = etternamn;
+		// TODO
+		throw new RuntimeException("setEtternamn not implemented");
 	}
 
 	public String getFornamn() {
-		return fornamn;
+		// TODO
+		throw new RuntimeException("getFornamn not implemented");
 	}
 
 	public void setFornamn(String fornamn) {
-		this.fornamn = fornamn;
+		// TODO
+		throw new RuntimeException("setFornamn not implemented");
 	}
 
 	public void setFodselsnummer(long fodselsnummer) {
-		this.fodselsnummer = fodselsnummer;
+		// TODO
+		throw new RuntimeException("setFodselsnummer not implemented");
 	}
 
 	public long getFodselsnummer() {
-		return fodselsnummer;
+		// TODO
+		throw new RuntimeException("getFodselsnummer not implemented");
 	}
 
 	public boolean erLik(Person person) {
-		return (fodselsnummer == person.getFodselsnummer());
+		// TODO
+		throw new RuntimeException("erLik not implemented");
 	}
 
 	public boolean erKvinne() {
-		return ((fodselsnummer / 100 ) % 2) == 0;
+		// TODO
+		throw new RuntimeException("erKvinne not implemented");
 	}
 
 	public boolean erMann() {
-		return (!erKvinne());	
+		// TODO
+		throw new RuntimeException("erMann not implemented");
 	}
 
 	@Override
 	public String toString() {
-		return fodselsnummer + "\n" +
-				   etternamn + "\n" +
-				   fornamn + "\n";
+		// TODO
+		throw new RuntimeException("toString not implemented");
 	}
 }

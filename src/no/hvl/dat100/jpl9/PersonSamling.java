@@ -2,6 +2,8 @@ package no.hvl.dat100.jpl9;
 
 public class PersonSamling {
 
+	private int nesteledig;
+	
 	public PersonSamling() {
 		
 		// TODO
@@ -20,6 +22,11 @@ public class PersonSamling {
 		throw new RuntimeException("getAntall not implemented");
 	}
 
+	// DO NOT TOUCH - FOR TESTING PURPOSES ONLY
+	public void setAntall(int antall) {
+		nesteledig = antall;
+	}
+	
 	public Person[] getSamling() {
 		
 		// TODO
@@ -38,6 +45,18 @@ public class PersonSamling {
 		throw new RuntimeException("finnes not implemented");
 	}
 
+	public boolean ledigPlass() {
+		
+		// TODO
+		throw new RuntimeException("ledigPlass not implemented");
+	}
+
+	public boolean leggTil(Person p) {
+
+		// TODO
+		throw new RuntimeException("leggTil not implemented");
+	}
+	
 	public String toString() {
 		
 		// TODO
@@ -50,16 +69,11 @@ public class PersonSamling {
 		throw new RuntimeException("utvid not implemented");
 	}
 
-	public boolean ledigPlass() {
-		
-		// TODO
-		throw new RuntimeException("ledigPlass not implemented");
-	}
-
-	public boolean leggTil(Person p) {
+	
+	public boolean leggTilUtvid(Person p) {
 
 		// TODO
-		throw new RuntimeException("leggTil not implemented");
+		throw new RuntimeException("leggTilUtvid not implemented");
 	}
 
 	public void slett(Person p) {
