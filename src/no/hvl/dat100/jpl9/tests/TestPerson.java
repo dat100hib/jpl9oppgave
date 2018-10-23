@@ -33,23 +33,35 @@ public class TestPerson {
 	}
 	
 	@Test
-	public void testKjonn1() {
+	public void testMann() {
 		long fnummer = 10069418300L;
 		
 		TPerson person = new TPerson("Olsen", "Ole", fnummer);
 		
 		assertTrue(person.erMann());
-		assertFalse(person.erKvinne());
 	}
 	
 	@Test
-	public void testKjonn2() {
+	public void testKvinne() {
 		long fnummer = 10069418200L;
 		
 		TPerson person = new TPerson("Olsen", "Oline", fnummer);
 		
-		assertFalse(person.erMann());
 		assertTrue(person.erKvinne());
+	}
+	
+	@Test
+	public void testKjonn() {
+		
+		TPerson kvinne = new TPerson("Olsen", "Oline", 10069418200L);
+		TPerson mann = new TPerson("Olsen", "Ole", 10069418300L);
+		
+		assertFalse(kvinne.erMann());
+		assertTrue(kvinne.erKvinne());
+		
+		assertTrue(mann.erMann());
+		assertFalse(mann.erKvinne());
+		
 	}
 	
 	@Test
@@ -60,5 +72,16 @@ public class TestPerson {
 		
 		assertFalse(person1.erLik(person3));
 		assertTrue(person1.erLik(person2));
+	}
+	
+	@Test 
+	public void testtoString() {
+		
+		TPerson person = new TPerson("Olsen", "Ole", 10100110700L);
+		
+		String personstr = "10100110700\nOlsen\nOle\n";
+		
+		assertTrue(person.toString().equals(personstr));
+		
 	}
 }
