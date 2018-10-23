@@ -20,7 +20,7 @@ public class Filer {
 		PrintWriter writer = null;
 
 		// TODO
-		throw new RuntimeException("not implemented");
+		throw new RuntimeException("skriv not implemented");
 
 	}
 
@@ -29,6 +29,6 @@ public class Filer {
 		PersonSamling samling = null;
 
 		// TODO
-		throw new RuntimeException("not implemented");
+		throw new RuntimeException("les not implemented");
 	}
 }
